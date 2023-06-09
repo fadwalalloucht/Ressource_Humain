@@ -1,0 +1,67 @@
+.body{
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+
+  .body .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .body .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: rgb(60, 179, 113);
+}
+
+  form .langue-details .langue-title{
+    font-size: 20px;
+      font-weight: 500;
+    }
+  
+    form .langue label{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      }  
+
+      form .langue {
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        justify-content: space-between;
+    }
+
+    form .langue label .l {
+      height: 18px;
+      width: 18px;
+      margin-right: 10px;
+      background: #d9d9d9;
+      border: 5px solid transparent;
+      transition: all 0.3s ease;
+      
+  }
+
+   #l-1:checked ~ .langue label .one,
+   #l-2:checked ~ .langue label .two,
+   #l-3:checked ~ .langue label .three{
+	 background:  rgb(60, 179, 113);
+	 border-color: #d9d9d9;
+  
+   }
+   form input[type="checkbox"]{
+	 display: none;
+   }
+
+   
+
+   
